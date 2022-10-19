@@ -1,9 +1,9 @@
-import vueSsign from './lib/vue-ssign.vue'
-vueSsign.install = function (Vue) {
+import vueAsign from './lib/vue-asign.vue'
+vueAsign.install = function (Vue) {
   if (this.installed) {
     return
   }
   this.installed = true
-  Vue.component('vueSsign', vueSsign)
+  Vue.component('vueAsign', vueAsign)
 }
-export default vueSsign
+export default vueAsign

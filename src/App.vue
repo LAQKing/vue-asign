@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vueSsign ref="ssign" :width="500" :height="300" :lineWidth="1" :lineColor="'red'" :bgColor="'green'" />
+    <vueAsign ref="ssign" :width="500" :height="300" :lineWidth="1" :lineColor="'red'" :bgColor="'green'" />
     <div style="text-align: center">
       <button @click="repaint">重绘</button>
       <button @click="createImg">生成图片</button>

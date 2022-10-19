@@ -1,4 +1,4 @@
-# vue-ssign
+# vue-asign
 
 > Canvas 生成电子签名
 ## 支持vue2、vue3
@@ -13,23 +13,23 @@
 ## 安装
 
 ``` bash
-npm install vue-ssign --save
+npm install vue-asign --save
 ```
 
 ## 使用
 1. 全局使用 、局部
 ```js
 // 全局 vue2 main.js
-import ssign from 'vue-ssign'
-Vue.use(ssign)
+import asign from 'vue-asign'
+Vue.use(asign)
 // 全局vue3 main.js
 import App from './App.vue'
-import ssign from 'vue-ssign'
+import asign from 'vue-asign'
 const app = createApp(App)
-app.use(ssign)
+app.use(asign)
 // 局部
-import ssign from 'vue-ssign'
-components: { ssign }
+import asign from 'vue-asign'
+components: { asign }
 ```
 
 3. 说明
@@ -44,7 +44,7 @@ components: { ssign }
 | gapTop | Number | 5 | 图片上边距 |
 | gapRight | Number | 5 | 图片右边距 |
 | gapBottom | Number | 5 | 图片下边距 |
-| direction | Number | 0 | 图片旋转角度（顺时针旋转五个角度0、90、180、270、360） |
+| direction | Number | 0 | 图片旋转角度（顺时针旋转,只有90、180、270三个数值有效） |
 | bgColor | String | 空 | 画布背景色，为空时画布背景透明，<br />支持多种格式 '#aaa'，'#ababab'，'rgb(255, 255, 255)'，'rgba(255,255,255,0)'，'green' |
 | isCrop | Boolean | true | 是否裁剪，在画布设定尺寸基础上裁掉四周空白部分 |
 | format | String | image/png | 生成图片格式 image/jpeg(jpg格式下生成的图片透明背景会变黑色请慎用或指定背景色)、 image/webp |
@@ -52,15 +52,18 @@ components: { ssign }
 
 
 两个内置方法，通过给组件设置 `ref` 调用：
+```js
+<vueAsign ref="asign" :width="500" :height="300" :lineWidth="1" :lineColor="'red'" :bgColor="'green'" />
+```
 **清空画布**
 ```js
-this.$refs.ssign.clearCanvas()
+this.$refs.asign.clearCanvas()
 
 ```
 
 **生成图片**
 ```js
-this.$refs.ssign.createImg().then(res=>{
+this.$refs.asign.createImg().then(res=>{
         this.resImg = res
 })
 
