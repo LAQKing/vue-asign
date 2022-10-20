@@ -1,5 +1,6 @@
 # vue-asign
 
+![npm](https://img.shields.io/npm/dm/vue-asign) ![GitHub package.json version](https://img.shields.io/github/package-json/v/LAQKing/vue-asign)
 > Canvas 生成电子签名
 ## 支持vue2、vue3
 
