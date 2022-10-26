@@ -52,6 +52,7 @@ components: [asign]
 | isCrop | Boolean | true | 是否裁剪，在画布设定尺寸基础上裁掉四周空白部分 |
 | format | String | image/png | 生成图片格式 image/jpeg(jpg格式下生成的图片透明背景会变黑色请慎用或指定背景色)、 image/webp |
 | quality | Number | 1 | 生成图片质量；在指定图片格式为 image/jpeg 或 image/webp的情况下，可以从 0 到 1 的区间内选择图片的质量。如果超出取值范围，将会使用默认值 0.92。其他参数会被忽略。 |
+
 注：isCrop为true时，图片宽高由实际内容决定。
 
 3. 两个内置方法，通过给组件设置 `ref` 调用：
