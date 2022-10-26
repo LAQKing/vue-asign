@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@ans1998/vue3-color": "^3.0.7",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },

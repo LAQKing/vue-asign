@@ -1,6 +1,7 @@
 <template>
   <canvas
     ref="vueSign"
+    :style="{background:bgColor}"
     @mousedown="mousedown"
     @mousemove="mousemove"
     @mouseup="mouseup"
@@ -112,12 +113,12 @@ export default {
 
     mousedown(e) {
       this.isMove = true
-      this.drawLine(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, false)
+      this.drawLine(e.pageX - this.offset.left, e.pageY - this.offset.top, false)
     },
 
     mousemove(e) {
       if (this.isMove) {
-        this.drawLine(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true)
+        this.drawLine(e.pageX - this.offset.left, e.pageY - this.offset.top, true)
       }
     },
 
