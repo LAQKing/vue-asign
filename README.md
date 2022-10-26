@@ -4,6 +4,8 @@
 > Canvas 生成电子签名
 ## 支持vue2、vue3
 
+### [演示demo](https://laqtxy.gitee.io/vue-asign/)
+
 ## 功能
 
 1. 适配 PC端 和 移动端
