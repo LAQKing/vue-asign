@@ -78,10 +78,10 @@ export default {
   methods:{
     setFontColor(type){
       if(type=='line'){
-        this.lineColor = this.colors.hex
+        this.lineColor = this.colors.hex8
         this.showColor1 = false
       }else{
-        this.bgColor = this.colors.hex
+        this.bgColor = this.colors.hex8
         this.showColor2 = false
       }
     },
